@@ -11,7 +11,7 @@
 
 
 ## Tech Stack
-**Python**
+**Python\n**
 **FastAPI**
 
 
