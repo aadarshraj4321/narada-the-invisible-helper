@@ -7,7 +7,7 @@ def get_ai_response(api_key, prompt):
         return "Error: Gemini API key is not set. Please set it in the settings."
     
     try:
-        genai.configure(api_key='AIzaSyAZvyVxAdpE9kae87_JohNJm5TsEpeg37w')
+        genai.configure(api_key=api_key)
         model = genai.GenerativeModel('gemini-flash-latest')
         response = model.generate_content(prompt)
         return response.text
